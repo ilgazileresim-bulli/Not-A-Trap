@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NOT A TRAP modlarını keşfet, güvenli karantinadan geçir ve toplulukla paylaş.">
+  <meta name="theme-color" content="#0a0a09">
+  <title>NOT A TRAP // Community Vault</title>
+  <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/polish.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="NOT A TRAP ana sayfa">
+      <img src="/assets/icon.svg" alt="" width="42" height="42">
+      <span><strong>NOT A TRAP</strong><small>COMMUNITY VAULT / 01</small></span>
+    </a>
+    <nav aria-label="Ana menü">
+      <a href="#game">OYUN</a>
+      <a href="#profile">PROFİL</a>
+      <a href="#builder">ATÖLYE</a>
+      <a href="#mods">MODLAR</a>
+      <a href="#safety">GÜVENLİK</a>
+    </nav>
+    <div class="language-switch" role="group" aria-label="Dil / Language">
+      <button type="button" data-language="tr" aria-pressed="true">TR</button>
+      <span>/</span>
+      <button type="button" data-language="en" aria-pressed="false">EN</button>
+    </div>
+    <button class="account-trigger" id="account-trigger" type="button"><span class="account-light"></span><b>GİRİŞ YAP</b><small>OYUNCU HESABI</small></button>
+    <a class="btn btn-solid header-upload" href="#builder">MOD YAP <span>↗</span></a>
+    <button class="menu-button" id="menu-button" aria-label="Menüyü aç" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="game">
+      <div class="hero-grid grid-overlay" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> DOSYA 220 / TOPLULUK BAĞLANTISI AÇIK</p>
+        <h1>OYUN SANA<br><span>YALAN SÖYLER.</span><br>MODLAR DA.</h1>
+        <p class="hero-lead">220 bölümlük siyah-beyaz ultra troll platformer. Kuralları boz, başkasının hatasına gir, ama hiçbir pakete körü körüne güvenme.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid btn-large" href="#mods">MODLARI KEŞFET <span>↓</span></a>
+          <button class="btn btn-ghost btn-large" data-open-upload>KENDİ HATANI YÜKLE</button>
+        </div>
+        <div class="hero-metrics" id="hero-metrics">
+          <div><strong>220</strong><span>BÖLÜM</span></div>
+          <div><strong>44</strong><span>KURAL PERDESİ</span></div>
+          <div><strong>24H</strong><span>ZORUNLU KARANTİNA</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal delay-1">
+        <div class="window-frame">
+          <div class="window-bar">
+            <span class="window-title">NAT://RUN/LEVEL_220</span>
+            <span class="window-controls">— □ ×</span>
+          </div>
+          <img src="/assets/level-220.png" alt="NOT A TRAP 220. bölüm oyun görüntüsü">
+          <div class="visual-stamp">DOĞRULANMIŞ OYUN GÖRÜNTÜSÜ</div>
+        </div>
+        <div class="floating-note note-a">← ÇIKIŞ BURADA<br><small>şimdilik</small></div>
+        <div class="floating-note note-b">PERDE 44/44</div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span>SCROLL</span><i></i></div>
+    </section>
+
+    <section class="ticker" aria-label="Oyun özellikleri">
+      <div class="ticker-track">
+        <span>ULTRA TROLL PLATFORMER</span><b>◆</b><span>CREATE STUDIO</span><b>◆</b><span>NINTENDO CONTROLLER</span><b>◆</b><span>220 BÖLÜM</span><b>◆</b><span>MOD STUDIO PRO 5</span><b>◆</b>
+        <span>ULTRA TROLL PLATFORMER</span><b>◆</b><span>CREATE STUDIO</span><b>◆</b><span>NINTENDO CONTROLLER</span><b>◆</b><span>220 BÖLÜM</span><b>◆</b><span>MOD STUDIO PRO 5</span><b>◆</b>
+      </div>
+    </section>
+
+    <section class="player-hub section-pad" id="profile">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">01 / OYUNCU DOSYASI</p><h2>OYUN SENİ<br>HATIRLIYOR.</h2></div>
+        <p>Oyunda kullandığın hesapla giriş yap. İlerlemen, ölüm sayın, denemelerin ve açtığın başarımlar tek dosyada görünür.</p>
+      </div>
+      <div class="profile-shell reveal" id="profile-shell">
+        <div class="profile-locked" id="profile-locked">
+          <div class="profile-lock-mark">◇</div>
+          <p class="eyebrow">DOSYA ŞİFRELİ / OTURUM YOK</p>
+          <h3>İSTATİSTİKLERİ AÇ</h3>
+          <p>Oyundaki kullanıcı adın ve şifrenle giriş yap veya yeni bir yerel hesap oluştur.</p>
+          <button class="btn btn-solid btn-large" type="button" data-open-auth>GİRİŞ YAP / KAYIT OL <span>→</span></button>
+        </div>
+        <div class="profile-dashboard" id="profile-dashboard" hidden>
+          <aside class="profile-identity">
+            <div class="profile-avatar" id="profile-avatar">NA</div>
+            <span>AKTİF OYUNCU</span>
+            <h3 id="profile-name">—</h3>
+            <p id="profile-last-played">SON OYUN / —</p>
+            <button class="text-link" id="logout-button" type="button">OTURUMU KAPAT →</button>
+          </aside>
+          <div class="profile-data">
+            <div class="profile-progress-head"><div><span>OYUN İLERLEMESİ</span><strong id="profile-progress-text">0%</strong></div><div class="profile-progress-track"><i id="profile-progress-fill"></i></div></div>
+            <div class="profile-stat-grid">
+              <article><span>ULAŞILAN BÖLÜM</span><strong id="stat-level">001</strong><small>/ 220</small></article>
+              <article><span>TAMAMLANAN</span><strong id="stat-completed">001</strong><small>DOSYA</small></article>
+              <article><span>ÖLÜM</span><strong id="stat-deaths">000</strong><small>TEKRAR</small></article>
+              <article><span>DENEME</span><strong id="stat-attempts">000</strong><small>TOPLAM</small></article>
+            </div>
+            <div class="achievement-strip"><div><span>BAŞARIMLAR</span><b id="achievement-count">0 AÇIK</b></div><div id="achievement-list"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto section-pad">
+      <div class="section-index">02 / PROTOKOL</div>
+      <div class="manifesto-title reveal">
+        <p class="eyebrow">OYUNUN KURALI</p>
+        <h2>HİÇBİR ŞEYE<br>GÜVENME.</h2>
+      </div>
+      <div class="manifesto-copy reveal delay-1">
+        <p>NOT A TRAP zemini, kontrolü, boyutu ve yerçekimini senden önce değiştirir. Topluluk modları bunu daha da ileri götürür: yeni fizik deneyleri, erişilebilirlik paketleri, yapımcı araçları ve kabus rotaları.</p>
+        <p>Her mod veri olarak okunur. Kod çalıştırılmaz. Dosya temiz görünse bile <strong>tam 24 saat</strong> indirmeye kapalı kalır.</p>
+        <a href="#safety" class="text-link">GÜVENLİK KATMANLARINI İNCELE <span>→</span></a>
+      </div>
+      <div class="rule-stack reveal delay-2" aria-label="Bozulan oyun kuralları">
+        <div><span>01</span><b>ZEMİN</b><em>YALAN</em></div>
+        <div><span>02</span><b>YERÇEKİMİ</b><em>ŞÜPHELİ</em></div>
+        <div><span>03</span><b>ÇIKIŞ</b><em>KAÇIYOR</em></div>
+        <div><span>04</span><b>MOD DOSYASI</b><em>TARANIYOR</em></div>
+      </div>
+    </section>
+
+    <section class="showcase section-pad">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">03 / OYUN DOSYALARI</p><h2>İÇERİDEN GÖRÜNTÜLER</h2></div>
+        <p>Monokrom laboratuvar. Hareket eden kurallar. Seni hatırlayan bir oyun.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-main reveal">
+          <img src="/assets/ui-preview.png" alt="NOT A TRAP ana menü ve oyun haritası">
+          <figcaption><span>ANA DOSYA / 00</span><b>OYUN SANA YALAN SÖYLER</b></figcaption>
+        </figure>
+        <figure class="reveal delay-1">
+          <img src="/assets/create-studio.png" alt="NOT A TRAP Create Studio bölüm editörü">
+          <figcaption><span>CREATE / 01</span><b>KENDİ TUZAĞINI KUR</b></figcaption>
+        </figure>
+        <figure class="reveal delay-2">
+          <img src="/assets/mod-manager.png" alt="NOT A TRAP oyun içi mod yöneticisi">
+          <figcaption><span>MOD MANAGER / 01</span><b>HER KURALI GÖR</b></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="builder-section section-pad" id="builder">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">04 / MOD ATÖLYESİ</p><h2>KURALI<br>YENİDEN YAZ.</h2></div>
+        <p>Oyunun gerçekten okuyabildiği ayrıntılı `.natmod` paketleri üret. 31 güvenli kuralı, bölüm kapsamını, sürüm bilgisini ve uyumluluk notlarını tek stüdyoda yönet.</p>
+      </div>
+      <div class="builder-shell reveal">
+        <div class="builder-topbar">
+          <span><i></i> NATMOD DESIGN LAB / STUDIO 06 <small id="builder-autosave">TASLAK HAZIR</small></span>
+          <div>
+            <button type="button" id="builder-undo" disabled title="Geri al">↶ GERİ</button>
+            <button type="button" id="builder-redo" disabled title="İleri al">↷ İLERİ</button>
+            <button type="button" id="builder-reset">YENİ DOSYA</button>
+            <button type="button" id="builder-load">DOSYA AÇ</button>
+            <input id="builder-file" type="file" accept=".natmod,application/json" hidden>
+          </div>
+        </div>
+        <form id="mod-builder-form" class="builder-workspace">
+          <aside class="builder-sidebar">
+            <button type="button" class="builder-tab active" data-builder-tab="identity"><span>01</span>KİMLİK</button>
+            <button type="button" class="builder-tab" data-builder-tab="scope"><span>02</span>KAPSAM</button>
+            <button type="button" class="builder-tab" data-builder-tab="physics"><span>03</span>FİZİK</button>
+            <button type="button" class="builder-tab" data-builder-tab="hazards"><span>04</span>DÜNYA</button>
+            <button type="button" class="builder-tab" data-builder-tab="abilities"><span>05</span>OYUNCU</button>
+            <button type="button" class="builder-tab" data-builder-tab="release"><span>06</span>YAYIN</button>
+            <button type="button" class="builder-tab" data-builder-tab="audit"><span>07</span>TEST</button>
+            <div class="builder-health"><span>ŞEMA DURUMU</span><strong id="builder-health">BEKLİYOR</strong><small>Yerel taslak otomatik kaydedilir. Paket hiçbir çalıştırılabilir kod içermez.</small></div>
+          </aside>
+          <div class="builder-editor">
+            <section class="builder-panel active" data-builder-panel="identity">
+              <div class="panel-title"><span>DOSYA 01 / BAŞLANGIÇ</span><h3>MOD KİMLİĞİ</h3><p>Sıfırdan başla veya oyun tarzına göre hazırlanmış bir reçeteyi düzenle.</p></div>
+              <div class="preset-rack" aria-label="Hazır mod reçeteleri">
+                <button type="button" data-builder-preset="balanced"><b>DENGELİ+</b><small>Akıcı, adil fizik</small><span>01</span></button>
+                <button type="button" data-builder-preset="nightmare"><b>KÂBUS</b><small>Hızlı ve acımasız</small><span>02</span></button>
+                <button type="button" data-builder-preset="accessible"><b>ERİŞİLEBİLİR</b><small>Rota ve tolerans</small><span>03</span></button>
+                <button type="button" data-builder-preset="debug"><b>DEBUG LAB</b><small>Bütün veriyi göster</small><span>04</span></button>
+                <button type="button" data-builder-preset="troll"><b>ULTRA TROLL</b><small>Kurallar yalan söyler</small><span>05</span></button>
+              </div>
+              <div class="builder-form-grid">
+                <label>MOD KİMLİĞİ <small>küçük harf / nokta / tire</small><input name="id" required pattern="[a-z0-9][a-z0-9._-]{1,63}" value="benim-ilk-modum"></label>
+                <label>SÜRÜM <small>semver</small><input name="version" required value="1.0.0"></label>
+                <label>MOD ADI<input name="name" required maxlength="80" value="Benim İlk Modum"></label>
+                <label>YAPIMCI<input name="author" id="builder-author" required maxlength="60" value="Oyuncu"></label>
+                <label class="wide">AÇIKLAMA<textarea name="description" required maxlength="800" rows="5">NOT A TRAP kurallarını yeniden düzenleyen güvenli veri modu.</textarea></label>
+              </div>
+            </section>
+            <section class="builder-panel" data-builder-panel="scope">
+              <div class="panel-title"><span>ROUTE MATRIX / 220</span><h3>BÖLÜM KAPSAMI</h3><p>Modun hangi bölümlerde çalışacağını belirle. Aralıklar oyun için gerçek bölüm listesine çevrilir.</p></div>
+              <div class="scope-mode-grid">
+                <label><input type="radio" name="target_mode" value="all" checked><span><b>TÜM OYUN</b><small>1–220 bölüm</small></span></label>
+                <label><input type="radio" name="target_mode" value="range"><span><b>TEK ARALIK</b><small>Başlangıç / bitiş</small></span></label>
+                <label><input type="radio" name="target_mode" value="custom"><span><b>ÖZEL LİSTE</b><small>1, 5, 20–30</small></span></label>
+              </div>
+              <div class="builder-form-grid scope-fields">
+                <label>İLK BÖLÜM<input type="number" name="target_start" min="1" max="220" value="1"></label>
+                <label>SON BÖLÜM<input type="number" name="target_end" min="1" max="220" value="220"></label>
+                <label class="wide">ÖZEL BÖLÜMLER <small>virgül ve aralık kullanılabilir</small><input name="target_custom" placeholder="1, 5, 20-30, 220"></label>
+                <label class="wide">BÖLÜM BAŞLANGIÇ MESAJI<input name="start_message" maxlength="100" placeholder="Bu bölüm artık farklı."></label>
+              </div>
+              <div class="scope-map" id="scope-map" aria-label="220 bölüm kapsam önizlemesi"></div>
+              <div class="scope-legend"><span><i></i> MOD AKTİF</span><span><i></i> NORMAL OYUN</span><b id="scope-count">220 / 220</b></div>
+            </section>
+            <section class="builder-panel" data-builder-panel="physics">
+              <div class="panel-title"><span>KURAL MATRİSİ</span><h3>FİZİK MOTORU</h3><p>Sayısal değerler güvenli aralıkların dışına çıkamaz.</p></div>
+              <div class="micro-presets"><span>HIZLI PROFİL</span><button type="button" data-physics-preset="vanilla">VANILLA</button><button type="button" data-physics-preset="float">AY YÜRÜYÜŞÜ</button><button type="button" data-physics-preset="heavy">AĞIRLIK</button><button type="button" data-physics-preset="rush">RUSH</button></div>
+              <div class="range-grid">
+                <label><span>OYUNCU HIZI <output data-output="player_speed">1.00×</output></span><input type="range" name="player_speed" min="0.35" max="4" step="0.05" value="1"></label>
+                <label><span>ZIPLAMA GÜCÜ <output data-output="jump_power">1.00×</output></span><input type="range" name="jump_power" min="0.35" max="3" step="0.05" value="1"></label>
+                <label><span>YERÇEKİMİ <output data-output="gravity">1.00×</output></span><input type="range" name="gravity" min="0.15" max="3" step="0.05" value="1"></label>
+                <label><span>OYUNCU BOYUTU <output data-output="player_scale">1.00×</output></span><input type="range" name="player_scale" min="0.58" max="1.25" step="0.01" value="1"></label>
+                <label><span>TUZAK HIZI <output data-output="hazard_speed">1.00×</output></span><input type="range" name="hazard_speed" min="0.1" max="3" step="0.05" value="1"></label>
+              </div>
+              <div class="physics-telemetry"><article><span>KOŞU PROFİLİ</span><b id="telemetry-run">100%</b><small>Temel hıza göre</small></article><article><span>HAVADA KALIŞ</span><b id="telemetry-air">100%</b><small>Zıplama / yerçekimi</small></article><article><span>TEHLİKE TEMPOSU</span><b id="telemetry-hazard">100%</b><small>Tuzak devri</small></article></div>
+            </section>
+            <section class="builder-panel" data-builder-panel="hazards">
+              <div class="panel-title"><span>BOOLEAN GRID / WORLD</span><h3>TUZAK VE DÜNYA</h3><p>Ölüm mekaniklerini tek tek yönet; zamanı, platformları ve sahne kurallarını değiştir.</p></div>
+              <p class="rule-group-label">ÖLÜMCÜL NESNELER</p>
+              <div class="rule-toggle-grid">
+                <label><input type="checkbox" name="no_spikes"><span><b>DİKENLERİ KAPAT</b><small>Diken hasarı yok</small></span></label>
+                <label><input type="checkbox" name="no_saws"><span><b>TESTERELERİ KAPAT</b><small>Testere hasarı yok</small></span></label>
+                <label><input type="checkbox" name="no_lasers"><span><b>LAZERLERİ KAPAT</b><small>Lazer hasarı yok</small></span></label>
+                <label><input type="checkbox" name="no_drops"><span><b>DÜŞENLERİ KAPAT</b><small>Düşen bloklar yok</small></span></label>
+                <label><input type="checkbox" name="no_crusher"><span><b>EZİCİYİ KAPAT</b><small>Tavan ezicisi durur</small></span></label>
+                <label><input type="checkbox" name="no_wall"><span><b>KOVALAYAN DUVAR YOK</b><small>Takip duvarı durur</small></span></label>
+                <label><input type="checkbox" name="no_blinks"><span><b>ZEMİN KAYBOLMAZ</b><small>Faz platformları sabit</small></span></label>
+                <label><input type="checkbox" name="no_floor_fall"><span><b>ZEMİN ÇÖKMEZ</b><small>Çöken platformlar sabit</small></span></label>
+              </div>
+              <p class="rule-group-label">DÜNYA SİSTEMLERİ</p>
+              <div class="rule-toggle-grid">
+                <label><input type="checkbox" name="no_wind"><span><b>RÜZGÂRI KAPAT</b><small>İtme kuvveti yok</small></span></label>
+                <label><input type="checkbox" name="no_reverse"><span><b>TERS KONTROL YOK</b><small>Ayna bölgeleri kapanır</small></span></label>
+                <label><input type="checkbox" name="no_portals"><span><b>PORTALLARI KAPAT</b><small>Geri atma yok</small></span></label>
+                <label><input type="checkbox" name="no_gravity_flip"><span><b>FLIP ÇİZGİLERİ KAPALI</b><small>Zorunlu dönüş yok</small></span></label>
+                <label><input type="checkbox" name="freeze_movers"><span><b>PLATFORMLARI DONDUR</b><small>Hareket durur</small></span></label>
+                <label><input type="checkbox" name="freeze_hazards"><span><b>TUZAKLARI DONDUR</b><small>Zaman durur</small></span></label>
+                <label><input type="checkbox" name="slow_hazards"><span><b>YAVAŞ ZAMAN</b><small>Tuzaklar %28 hızda</small></span></label>
+              </div>
+            </section>
+            <section class="builder-panel" data-builder-panel="abilities">
+              <div class="panel-title"><span>PLAYER MODULES / SAFE</span><h3>OYUNCU MODÜLLERİ</h3><p>Hareket, erişilebilirlik, görünüm ve geliştirici verilerini birlikte tasarla.</p></div>
+              <p class="rule-group-label">HAREKET VE ERİŞİLEBİLİRLİK</p>
+              <div class="rule-toggle-grid">
+                <label><input type="checkbox" name="reverse_gravity"><span><b>TERS YERÇEKİMİ</b><small>Tavana düş</small></span></label>
+                <label><input type="checkbox" name="air_jump"><span><b>HAVA ZIPLAMASI</b><small>Sınırsız hava zıplaması</small></span></label>
+                <label><input type="checkbox" name="auto_jump"><span><b>OTOMATİK ZIPLA</b><small>Temasta zıpla</small></span></label>
+                <label><input type="checkbox" name="infinite_coyote"><span><b>SONSUZ COYOTE</b><small>Geç zıplama açık</small></span></label>
+                <label><input type="checkbox" name="no_fall"><span><b>BOŞLUK ÖLDÜRMEZ</b><small>Düşünce geri dön</small></span></label>
+                <label><input type="checkbox" name="invincible"><span><b>TANRI MODU</b><small>Ölüm devre dışı</small></span></label>
+                <label><input type="checkbox" name="noclip"><span><b>NOCLIP</b><small>Çarpışma devre dışı</small></span></label>
+                <label><input type="checkbox" name="always_door"><span><b>ÇIKIŞI ZORLA</b><small>Kapı hep görünür</small></span></label>
+                <label><input type="checkbox" name="exit_aura"><span><b>ÇIKIŞ AURASI</b><small>Kapıyı uzaktan etkinleştir</small></span></label>
+                <label><input type="checkbox" name="ghost"><span><b>HAYALET GÖRÜNÜM</b><small>Karakter yarı saydam</small></span></label>
+                <label><input type="checkbox" name="no_trail"><span><b>İZİ KAPAT</b><small>Koşu gölgeleri gizli</small></span></label>
+              </div>
+              <p class="rule-group-label">GELİŞTİRİCİ GÖRÜNÜMÜ</p>
+              <div class="rule-toggle-grid">
+                <label><input type="checkbox" name="show_hitboxes"><span><b>HITBOX GÖSTER</b><small>Fizik sınırlarını çiz</small></span></label>
+                <label><input type="checkbox" name="show_triggers"><span><b>TETİKLERİ GÖSTER</b><small>Gizli alanları çiz</small></span></label>
+                <label><input type="checkbox" name="show_route"><span><b>ROTAYI GÖSTER</b><small>Çıkış yolunu çiz</small></span></label>
+                <label><input type="checkbox" name="show_velocity"><span><b>CANLI FİZİK VERİSİ</b><small>Hız ve konumu yaz</small></span></label>
+              </div>
+            </section>
+            <section class="builder-panel" data-builder-panel="release">
+              <div class="panel-title"><span>PACKAGE INTELLIGENCE</span><h3>YAYIN DOSYASI</h3><p>Mod yöneticisinin göstereceği sınıflandırma, bağımlılık ve sürüm notlarını tamamla.</p></div>
+              <div class="builder-form-grid release-grid">
+                <label>KATEGORİ<select name="category"><option>GAMEPLAY</option><option>CHALLENGE</option><option>ACCESSIBILITY</option><option>DEBUG</option><option>VISUAL</option><option>EXPERIMENTAL</option></select></label>
+                <label>ZORLUK<select name="difficulty"><option>EASY</option><option selected>NORMAL</option><option>HARD</option><option>NIGHTMARE</option><option>IMPOSSIBLE</option></select></label>
+                <label>HEDEF KİTLE<select name="audience"><option>EVERYONE</option><option>EXPERIENCED</option><option>CREATORS</option><option>SPEEDRUNNERS</option></select></label>
+                <label>YAYIN KANALI<select name="release_channel"><option>STABLE</option><option>BETA</option><option>ALPHA</option><option>NIGHTLY</option></select></label>
+                <label>DİL<select name="language"><option value="tr">Türkçe</option><option value="en">English</option><option value="multi">TR + EN</option></select></label>
+                <label>TAHMİNİ SÜRE <small>dakika</small><input type="number" name="estimated_minutes" min="1" max="999" value="15"></label>
+                <label>ÖNCELİK <small>-100 / +100</small><input type="number" name="priority" min="-100" max="100" value="0"></label>
+                <label>LİSANS<select name="license"><option value="">Belirtilmedi</option><option>CC0-1.0</option><option>CC-BY-4.0</option><option>MIT</option><option>ARR</option></select></label>
+                <label class="wide">ETİKETLER <small>virgülle ayır</small><input name="tags" maxlength="300" placeholder="physics, challenge, speedrun"></label>
+                <label class="wide">DESTEKLENEN GİRİŞLER <small>virgülle ayır</small><input name="supported_input" value="keyboard, nintendo-controller"></label>
+                <label>BAĞIMLILIKLAR <small>mod kimlikleri</small><textarea name="dependencies" rows="3" placeholder="core.physics-plus"></textarea></label>
+                <label>ÇAKIŞAN MODLAR <small>mod kimlikleri</small><textarea name="conflicts" rows="3" placeholder="other.gravity-pack"></textarea></label>
+                <label class="wide">ANA SAYFA<input type="url" name="homepage" maxlength="200" placeholder="https://..."></label>
+                <label class="wide">UYUMLULUK NOTLARI<textarea name="compatibility_notes" maxlength="800" rows="4" placeholder="2.3.0 ve sonrasıyla test edildi."></textarea></label>
+                <label>İÇERİK UYARILARI<textarea name="content_warnings" maxlength="500" rows="4" placeholder="Hızlı hareket, yanıp sönen zemin..."></textarea></label>
+                <label>KURULUM NOTLARI<textarea name="install_instructions" maxlength="800" rows="4" placeholder="Dosyayı mods klasörüne taşı."></textarea></label>
+                <label>DEĞİŞİKLİK GÜNLÜĞÜ<textarea name="changelog" maxlength="1000" rows="5" placeholder="1.0.0 — İlk yayın"></textarea></label>
+                <label>EMEĞİ GEÇENLER<textarea name="credits" maxlength="500" rows="5" placeholder="Test ekibi, ilham..."></textarea></label>
+                <label class="wide experimental-switch"><input type="checkbox" name="experimental"><span><b>DENEYSEL PAKET</b><small>Mod yöneticisinde açık uyarı etiketi gösterir.</small></span></label>
+              </div>
+            </section>
+            <section class="builder-panel" data-builder-panel="audit">
+              <div class="panel-title"><span>PRE-FLIGHT / LOCAL ANALYSIS</span><h3>PAKET TESTİ</h3><p>Dosyayı indirmeden önce kapsamı, zorluğu, çakışmaları ve güvenli şemayı incele.</p></div>
+              <div class="audit-score-grid">
+                <article><span>ETKİN KURAL</span><b id="audit-rule-count">0</b><small>Değiştirilen parametre</small></article>
+                <article><span>ZORLUK SKORU</span><b id="audit-score">00</b><small id="audit-rank">VANILLA</small></article>
+                <article><span>HEDEF</span><b id="audit-target">220</b><small>Bölüm</small></article>
+                <article><span>RİSK SINIFI</span><b id="audit-risk">DÜŞÜK</b><small>Veri paketi</small></article>
+              </div>
+              <div class="audit-board">
+                <div><span>ÇAKIŞMA DENETİMİ</span><ul id="builder-conflicts"><li>Henüz çakışma bulunmadı.</li></ul></div>
+                <div><span>PAKET KONTROL LİSTESİ</span><ul id="builder-checklist"><li data-check="identity">Kimlik alanları</li><li data-check="scope">Bölüm kapsamı</li><li data-check="rules">Oyun kuralı</li><li data-check="release">Yayın bilgileri</li></ul></div>
+              </div>
+              <button class="audit-run" type="button" id="builder-audit-run"><span>▶</span><b>TAM ŞEMA TESTİNİ ÇALIŞTIR</b><small>Sunucu doğrulaması + güvenlik kuralları</small></button>
+            </section>
+          </div>
+          <aside class="builder-inspector">
+            <div class="inspector-head"><span>CANLI MANIFEST</span><b id="manifest-size">0 B</b></div>
+            <div class="inspector-metrics"><div><span>KURAL</span><b id="inspector-rules">0</b></div><div><span>KAPSAM</span><b id="inspector-scope">220</b></div><div><span>SKOR</span><b id="inspector-score">00</b></div></div>
+            <pre id="manifest-preview" tabindex="0">{}</pre>
+            <div class="builder-diagnostics" id="builder-diagnostics"><span></span><p>Doğrulama bekleniyor.</p></div>
+            <div class="inspector-actions"><button class="btn btn-ghost" type="button" id="builder-copy">JSON KOPYALA</button><button class="btn btn-ghost" type="button" id="builder-validate">ŞEMAYI DOĞRULA</button></div>
+            <button class="btn btn-solid btn-large" type="button" id="builder-download" disabled>.NATMOD İNDİR <span>↓</span></button>
+          </aside>
+        </form>
+      </div>
+    </section>
+
+    <section class="mods-section section-pad" id="mods">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">05 / TOPLULUK ARŞİVİ</p><h2>ONAYLANMIŞ HATALAR</h2></div>
+        <p>Yalnızca taramadan geçmiş ve 24 saatlik karantinasını tamamlamış paketler.</p>
+      </div>
+
+      <div class="explorer-shell reveal">
+        <aside class="filters">
+          <div class="filter-head"><span>FİLTRE / 01</span><button id="clear-filters">TEMİZLE</button></div>
+          <label class="search-box">
+            <span>ARAMA</span>
+            <input id="mod-search" type="search" placeholder="Mod, yapımcı, etiket..." autocomplete="off">
+          </label>
+          <fieldset id="category-filters">
+            <legend>KATEGORİ</legend>
+            <label><input type="radio" name="category" value="" checked><span>TÜM DOSYALAR</span></label>
+            <label><input type="radio" name="category" value="GAMEPLAY"><span>GAMEPLAY</span></label>
+            <label><input type="radio" name="category" value="CHALLENGE"><span>CHALLENGE</span></label>
+            <label><input type="radio" name="category" value="ACCESSIBILITY"><span>ACCESSIBILITY</span></label>
+            <label><input type="radio" name="category" value="DEBUG"><span>DEBUG / CREATOR</span></label>
+          </fieldset>
+          <div class="filter-info"><span>◆</span><p>Her indirme SHA-256 kimliğiyle teslim edilir.</p></div>
+        </aside>
+        <div class="results">
+          <div class="results-toolbar">
+            <p><strong id="result-count">—</strong> DOSYA BULUNDU</p>
+            <label>SIRALA
+              <select id="sort-select"><option value="new">YENİ</option><option value="downloads">EN ÇOK İNDİRİLEN</option><option value="name">ADA GÖRE</option></select>
+            </label>
+          </div>
+          <div class="mod-grid" id="mod-grid" aria-live="polite">
+            <div class="loading-card"></div><div class="loading-card"></div><div class="loading-card"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="safety section-pad" id="safety">
+      <div class="section-index light">06 / GÜVENLİK LABORATUVARI</div>
+      <div class="safety-heading reveal">
+        <p class="eyebrow">24 SAAT / DEĞİŞMEZ KURAL</p>
+        <h2>TEMİZSE BİLE<br>HEMEN YAYINLANMAZ.</h2>
+        <p>Onay saati, yükleme anından tam 24 saat sonradır. Herhangi bir katman şüphe üretirse otomatik yayın durur ve insan incelemesine geçer.</p>
+      </div>
+      <div class="pipeline reveal delay-1">
+        <div class="pipeline-line" aria-hidden="true"></div>
+        <article><span>00:00</span><i>01</i><h3>KARANTİNA</h3><p>Dosya rastgele adla izole depoya alınır. Doğrudan indirilemez.</p></article>
+        <article><span>00:01</span><i>02</i><h3>ŞEMA + ARŞİV</h3><p>İzinli kurallar, JSON sınırları, yol kaçışı ve zip bombası denetlenir.</p></article>
+        <article><span>00:02</span><i>03</i><h3>ANTİVİRÜS</h3><p>Microsoft Defender, ClamAV veya sunucuda tanımlı tarayıcı paketi inceler.</p></article>
+        <article><span>24:00</span><i>04</i><h3>YAYIN</h3><p>Yalnızca temiz sonuç, süre kilidi açıldığında topluluğa çıkar.</p></article>
+      </div>
+      <div class="safety-disclaimer reveal">
+        <strong>GÜVENLİK NOTU / 01</strong>
+        <p>Hiçbir antivirüs yüzde yüz garanti vermez. Bu sistem riski azaltır; `.natmod` paketleri oyun tarafından veri olarak okunur ve içindeki kod çalıştırılmaz.</p>
+      </div>
+    </section>
+
+    <section class="upload-cta section-pad reveal">
+      <div class="crosshair" aria-hidden="true"></div>
+      <p class="eyebrow">07 / SENİN HATAN</p>
+      <h2>KURALI BOZDUN MU?</h2>
+      <p>Mod Studio Pro 5 ile ürettiğin paketi gönder. Tarama raporunu ve 24 saatlik geri sayımı canlı izle.</p>
+      <button class="btn btn-invert btn-large" data-open-upload>MODU KARANTİNAYA GÖNDER <span>↗</span></button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><img src="/assets/logo.svg" alt="NOT A TRAP" width="300" height="75"><p>ULTRA TROLL PLATFORMER<br>COMMUNITY VAULT</p></div>
+    <div><strong>GEZİN</strong><a href="#game">Oyun</a><a href="#profile">Profil</a><a href="#builder">Atölye</a><a href="#mods">Modlar</a><a href="#safety">Güvenlik</a></div>
+    <div><strong>YAPIMCI</strong><a href="#builder">Mod yap</a><button data-open-upload>Mod yükle</button><a href="#safety">Paket kuralları</a><a href="/api/health">Sistem durumu</a></div>
+    <div class="footer-status"><span class="status-dot"></span><strong>SİSTEM AKTİF</strong><small>LOCAL BUILD / 2026</small></div>
+    <p class="footer-bottom">© 2026 NOT A TRAP STUDIO <span>◆</span> OYUN SANA YALAN SÖYLER.</p>
+  </footer>
+
+  <dialog id="upload-dialog" class="modal upload-modal">
+    <form method="dialog" class="modal-shell" id="upload-form">
+      <div class="modal-head">
+        <div><span>YENİ DOSYA / KARANTİNA</span><h2>MOD YÜKLE</h2></div>
+        <button type="button" class="close-button" data-close-upload aria-label="Kapat">×</button>
+      </div>
+      <div class="upload-layout">
+        <div class="form-column">
+          <div class="form-row two"><label>MOD ADI<input name="name" required maxlength="80" placeholder="Örn. Ters Koridor"></label><label>SÜRÜM<input name="version" required maxlength="32" value="1.0.0"></label></div>
+          <div class="form-row two"><label>YAPIMCI<input name="author" required maxlength="60" placeholder="Rumuzun"></label><label>OYUN SÜRÜMÜ<input name="game_version" required maxlength="32" value="2.3+"></label></div>
+          <label>KISA AÇIKLAMA<input name="summary" required maxlength="180" placeholder="Kartta görünecek tek cümle"></label>
+          <label>AYRINTILI AÇIKLAMA<textarea name="description" required maxlength="4000" rows="5" placeholder="Mod neyi değiştiriyor? Nasıl oynanmalı?"></textarea></label>
+          <div class="form-row two"><label>KATEGORİ<select name="category"><option>GAMEPLAY</option><option>CHALLENGE</option><option>ACCESSIBILITY</option><option>DEBUG</option><option>VISUAL</option><option>TOTAL CONVERSION</option></select></label><label>LİSANS<select name="license"><option>All Rights Reserved</option><option>MIT</option><option>CC0-1.0</option><option>CC-BY-4.0</option><option>GPL-3.0</option></select></label></div>
+          <label>ETİKETLER<input name="tags" maxlength="240" placeholder="physics, hard, controller"></label>
+        </div>
+        <div class="drop-column">
+          <label class="drop-zone" id="drop-zone">
+            <input type="file" name="file" id="mod-file" accept=".natmod,.zip" required>
+            <span class="drop-icon">⇧</span>
+            <strong>DOSYAYI BURAYA BIRAK</strong>
+            <small>.NATMOD veya güvenli .ZIP / EN FAZLA 32 MB</small>
+            <em id="file-name">DOSYA SEÇİLMEDİ</em>
+          </label>
+          <div class="upload-checklist">
+            <p><span>01</span> JSON / ŞEMA DENETİMİ</p><p><span>02</span> ARŞİV İZOLASYONU</p><p><span>03</span> ANTİVİRÜS TARAMASI</p><p><span>04</span> 24 SAAT SÜRE KİLİDİ</p>
+          </div>
+          <label class="consent"><input type="checkbox" required><span>Dosyanın bana ait olduğunu ve güvenlik incelemesini kabul ediyorum.</span></label>
+        </div>
+      </div>
+      <div class="modal-foot"><p id="upload-message">Yükleme başladığında bu pencereyi kapatabilirsiniz; takip kodun cihazda saklanır.</p><button class="btn btn-solid btn-large" type="submit" id="upload-submit">KARANTİNAYI BAŞLAT <span>→</span></button></div>
+    </form>
+  </dialog>
+
+  <dialog id="status-dialog" class="modal status-modal">
+    <div class="modal-shell">
+      <div class="modal-head"><div><span>CANLI TARAMA / 24H</span><h2 id="status-title">DOSYA İNCELENİYOR</h2></div><button class="close-button" data-close-status aria-label="Kapat">×</button></div>
+      <div class="countdown-panel"><span>YAYINA KALAN</span><strong id="countdown">24:00:00</strong><div class="progress-track"><i id="quarantine-progress"></i></div></div>
+      <div class="scan-layers" id="scan-layers"></div>
+      <div class="ticket-row"><span>TAKİP KODU</span><code id="ticket-code">—</code><button id="copy-ticket">KOPYALA</button></div>
+      <p class="status-summary" id="status-summary">Tarama sırasına alındı.</p>
+    </div>
+  </dialog>
+
+  <dialog id="mod-dialog" class="modal mod-modal">
+    <div class="modal-shell" id="mod-detail"><p>Dosya yükleniyor…</p></div>
+  </dialog>
+
+  <dialog id="auth-dialog" class="modal auth-modal">
+    <form method="dialog" class="modal-shell auth-shell" id="auth-form">
+      <div class="auth-art" aria-hidden="true"><div class="auth-grid"></div><span>PLAYER<br>IDENTITY</span><strong>◆</strong><small>LOCAL SECURE LINK / 01</small></div>
+      <div class="auth-form-side">
+        <div class="modal-head"><div><span>OYUNCU DOSYASI / YEREL HESAP</span><h2 id="auth-title">GİRİŞ YAP</h2></div><button type="button" class="close-button" data-close-auth aria-label="Kapat">×</button></div>
+        <p class="auth-copy" id="auth-copy">Oyunda oluşturduğun hesapla devam et. Profil istatistiklerin aynı yerel dosyadan okunur.</p>
+        <label>KULLANICI ADI<input id="auth-username" name="username" autocomplete="username" required minlength="3" maxlength="24" placeholder="Oyuncu adın"></label>
+        <label>ŞİFRE<input id="auth-password" name="password" type="password" autocomplete="current-password" required minlength="6" maxlength="72" placeholder="••••••••"></label>
+        <label class="auth-confirm" id="auth-confirm-row" hidden>ŞİFRE TEKRAR<input id="auth-confirm" type="password" autocomplete="new-password" minlength="6" maxlength="72" placeholder="••••••••"></label>
+        <p class="auth-message" id="auth-message">Parola düz metin olarak saklanmaz.</p>
+        <button class="btn btn-solid btn-large" id="auth-submit" type="submit">GİRİŞ YAP <span>→</span></button>
+        <button class="auth-switch" id="auth-switch" type="button">HESABIN YOK MU? KAYIT OL</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/i18n.js" defer></script>
+  <script src="/app.js" defer></script>
+</body>
+</html>

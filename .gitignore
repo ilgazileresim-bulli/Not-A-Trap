@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.env
+.edge-*/
+qa-*.png
+data/*.db
+data/*.db-*
+uploads/approved/*
+uploads/quarantine/*
+uploads/rejected/*
+!data/.gitkeep
+!uploads/approved/.gitkeep
+!uploads/quarantine/.gitkeep
+!uploads/rejected/.gitkeep

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <rect width="1200" height="300" fill="#f4f3ee"/>
+  <g fill="none" stroke="#050505" stroke-width="14" stroke-linejoin="miter">
+    <rect x="48" y="48" width="204" height="204"/>
+    <path d="M111 225V106h79v119M65 225h171"/>
+    <path d="M195 102l39-37m0 0h-36m36 0v36"/>
+  </g>
+  <g fill="#050505">
+    <path d="M69 225l17-31 17 31zm34 0l17-31 17 31zm34 0l17-31 17 31z"/>
+    <circle cx="169" cy="167" r="7"/>
+    <path d="M48 48h55L48 103z"/>
+    <text x="300" y="155" font-family="Arial, Helvetica, sans-serif" font-size="104" font-weight="800" letter-spacing="3">NOT A TRAP</text>
+    <text x="307" y="207" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="600" letter-spacing="10">ULTRA TROLL PLATFORMER</text>
+  </g>
+</svg>
